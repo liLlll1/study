@@ -29,7 +29,7 @@ jobs:
         run: npm install -g notion-backup
 
       - name: Run backup
-        run: notion-backup
+        run: notion-backup --debug
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_FILE_TOKEN: ${{ secrets.NOTION_FILE_TOKEN }}
